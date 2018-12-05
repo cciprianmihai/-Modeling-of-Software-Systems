@@ -2,4 +2,4 @@
 
 The project is modeling a Parking System. The requirements are detailed below:
 
-![Screenshot](screenshot.png)
+![Screenshot](screenshot.PNG)
