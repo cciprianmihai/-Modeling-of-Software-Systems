@@ -1,2 +1,5 @@
 # Modeling of Software Systems
-2nd year course (Software Engineering)
+
+The project is modeling a Parking System. The requirements are detailed below:
+
+![Screenshot](screenshot.png)
