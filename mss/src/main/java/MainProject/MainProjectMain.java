@@ -2,6 +2,7 @@ package MainProject;//Class - MainProject.BuilderDPMain - is used to test the de
 import java.util.Scanner;
 public class MainProjectMain {
     public static void main(String[] args) {
+        Message instance = Message.getInstance();
         // TODO Auto-generated method stub
         // creating instance
         ParkingLot pLot = new ParkingLot();
@@ -17,9 +18,7 @@ public class MainProjectMain {
         System.out.println(pLot.toString());
         // input
         // ask user to type in the vehicle that he wants to parkVehicle
-        System.out.println("Please enter bus, car, or motor to parkVehicle a vehicle.");
-        System.out.println("Please enter fbus, fcar, or fmotor to remove a vehicle.");
-        System.out.println("Please enter 0 to exit.");
+        instance.showMessage();
         inp = input.next();
         // continue asking user for input until user enters zero
         while(!inp.equals("0")){
@@ -33,17 +32,13 @@ public class MainProjectMain {
                     // print out parking lot
                     System.out.println(pLot.toString());
                     // ask user to enter other input
-                    System.out.println("Please enter bus, car, or motor to parkVehicle a vehicle.");
-                    System.out.println("Please enter fbus, fcar, or fmotor to remove a vehicle.");
-                    System.out.println("Please enter 0 to exit.");
+                    instance.showMessage();
                     inp = input.next();
                 } else {
                     // failure message
                     System.out.println("\nParking Failed: MainProject.Bus spots are full");
                     // ask user to re-enter their inputs
-                    System.out.println("Please enter bus, car, or motor to parkVehicle a vehicle.");
-                    System.out.println("Please enter fbus, fcar, or fmotor to remove a vehicle.");
-                    System.out.println("Please enter 0 to exit.");
+                    instance.showMessage();
                     inp = input.next();
                 }
             } else if(inp.equals("car") || inp.equals("MainProject.Car")){
@@ -56,17 +51,13 @@ public class MainProjectMain {
                     // print out parking lot
                     System.out.println(pLot.toString());
                     // ask user to enter other input
-                    System.out.println("Please enter bus, car, or motor to parkVehicle a vehicle.");
-                    System.out.println("Please enter fbus, fcar, or fmotor to remove a vehicle.");
-                    System.out.println("Please enter 0 to exit.");
+                    instance.showMessage();
                     inp = input.next();
                 } else {
                     // failure message
                     System.out.println("\nParking Failed: large spots are full");
                     // ask user to re-enter their inputs
-                    System.out.println("Please enter bus, car, or motor to parkVehicle a vehicle.");
-                    System.out.println("Please enter fbus, fcar, or fmotor to remove a vehicle.");
-                    System.out.println("Please enter 0 to exit.");
+                    instance.showMessage();
                     inp = input.next();
                 }
             } else if(inp.equals("motor") || inp.equals("Motor")){
@@ -79,17 +70,13 @@ public class MainProjectMain {
                     // print out parking lot
                     System.out.println(pLot.toString());
                     // ask user to enter other input
-                    System.out.println("Please enter bus, car, or motor to parkVehicle a vehicle.");
-                    System.out.println("Please enter fbus, fcar, or fmotor to remove a vehicle.");
-                    System.out.println("Please enter 0 to exit.");
+                    instance.showMessage();
                     inp = input.next();
                 } else {
                     // failure message
                     System.out.println("\nParking Failed: MainProject.Motorcycle spots are full");
                     // ask user to re-enter input
-                    System.out.println("Please enter bus, car, or motor to parkVehicle a vehicle.");
-                    System.out.println("Please enter fbus, fcar, or fmotor to remove a vehicle.");
-                    System.out.println("Please enter 0 to exit.");
+                    instance.showMessage();
                     inp = input.next();
                 }
             }
@@ -106,18 +93,14 @@ public class MainProjectMain {
                     // print out parking lot
                     System.out.println(pLot.toString());
                     // ask user to re-enter input
-                    System.out.println("Please enter bus, car, or motor to parkVehicle a vehicle.");
-                    System.out.println("Please enter fbus, fcar, or fmotor to remove a vehicle.");
-                    System.out.println("Please enter 0 to exit.");
+                    instance.showMessage();
                     inp = input.next();
                 }
                 else{
                     // failure message
                     System.out.println("\nThe bus cannot left the parking spot.");
                     // ask user to re-enter input
-                    System.out.println("Please enter bus, car, or motor to parkVehicle a vehicle.");
-                    System.out.println("Please enter fbus, fcar, or fmotor to remove a vehicle.");
-                    System.out.println("Please enter 0 to exit.");
+                    instance.showMessage();
                     inp = input.next();
                 }
             }
@@ -134,22 +117,18 @@ public class MainProjectMain {
                     // print out parking lot
                     System.out.println(pLot.toString());
                     // ask user to re-enter input
-                    System.out.println("Please enter bus, car, or motor to parkVehicle a vehicle.");
-                    System.out.println("Please enter fbus, fcar, or fmotor to remove a vehicle.");
-                    System.out.println("Please enter 0 to exit.");
+                    instance.showMessage();
                     inp = input.next();
                 }
                 else{
                     // failure message
                     System.out.println("\nThe car cannot left the parking spot.");
                     // ask user to re-enter input
-                    System.out.println("Please enter bus, car, or motor to parkVehicle a vehicle.");
-                    System.out.println("Please enter fbus, fcar, or fmotor to remove a vehicle.");
-                    System.out.println("Please enter 0 to exit.");
+                    instance.showMessage();
                     inp = input.next();
                 }
             }
-            else if(inp.equals("fmoto") || inp.equals("Fmoto")){
+            else if(inp.equals("fmotor") || inp.equals("Fmotor")){
                 // creating instance
                 Vehicle m = vehicleFactory.getVehicle("motorcycle");
                 System.out.println("MainProject.Level number: ");
@@ -162,18 +141,14 @@ public class MainProjectMain {
                     // print out parking lot
                     System.out.println(pLot.toString());
                     // ask user to re-enter input
-                    System.out.println("Please enter bus, car, or motor to parkVehicle a vehicle.");
-                    System.out.println("Please enter fbus, fcar, or fmotor to remove a vehicle.");
-                    System.out.println("Please enter 0 to exit.");
+                    instance.showMessage();
                     inp = input.next();
                 }
                 else{
                     // failure message
                     System.out.println("\nThe motorcycle cannot left the parking spot.");
                     // ask user to re-enter input
-                    System.out.println("Please enter bus, car, or motor to parkVehicle a vehicle.");
-                    System.out.println("Please enter fbus, fcar, or fmotor to remove a vehicle.");
-                    System.out.println("Please enter 0 to exit.");
+                    instance.showMessage();
                     inp = input.next();
                 }
             }
@@ -181,7 +156,7 @@ public class MainProjectMain {
                 // failure message
                 System.out.println("\nInvalid input.");
                 // ask user to re-enter input
-                System.out.print("\nPlease enter bus, car, or motorcycle to parkVehicle a vehicle (enter 0 to exit): ");
+                instance.showMessage();
                 inp = input.next();
             }
             // terminating program
