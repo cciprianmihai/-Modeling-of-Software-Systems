@@ -1,6 +1,10 @@
 package BuilderDP;
 
-import lombok.*;
+
+import lombok.Builder;
+import lombok.EqualsAndHashCode;
+import lombok.Setter;
+import lombok.ToString;
 
 @Builder
 @EqualsAndHashCode @ToString

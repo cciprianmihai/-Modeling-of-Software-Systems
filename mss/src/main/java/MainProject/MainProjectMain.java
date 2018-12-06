@@ -1,5 +1,6 @@
 package MainProject;//Class - MainProject.BuilderDPMain - is used to test the design of the Parking Lot
 import java.util.Scanner;
+
 public class MainProjectMain {
     public static void main(String[] args) {
         Message instance = Message.getInstance();

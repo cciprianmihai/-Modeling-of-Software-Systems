@@ -1,5 +1,6 @@
 package MainProject;//Abstract class - MainProject.Vehicle - is used to define the main characteristics of a MainProject.Vehicle
 import java.util.ArrayList;
+
 public abstract class Vehicle {
     // protected field for the number of Spots used by the MainProject.Vehicle
     protected static int numberOfSpots;
